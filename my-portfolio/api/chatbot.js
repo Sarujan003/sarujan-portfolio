@@ -19,7 +19,7 @@ export default async function handler(request, response) {
           return response.status(500).json({ error: 'API key not configured on the server' });
       }
       
-      const apiUrl = `https://generativelaunguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${GEMINI_API_KEY}`;
+      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${GEMINI_API_KEY}`;
       
       // Create the prompt for Gemini
       const prompt = {
